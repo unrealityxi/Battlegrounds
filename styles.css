@@ -14,12 +14,12 @@ body {
 }
 
 #armyListWrapper{
-	border: 3px solid #bbb;
+	border: 2px solid white;
 	background-color: white;
 	box-shadow: 5px inset;
 	box-shadow: inset 0 0 5px #666;
 	height: 610px;
-	overflow: scroll;
+	overflow-y: scroll;
 	text-align: left;
 	padding-left: 2em;
 
@@ -35,14 +35,14 @@ padding: 2em;
 font-weight: bold;
 }
 #output {
-	border: 3px solid #bbb;
+	border: 2px solid white;
 	background-color: white;
 	text-align: left;
 	height: 270px;
 	padding: 2em;
 	color: darkgreen;
 	box-shadow: inset 0 0 3px #666;
-	overflow: scroll;
+	overflow-y: scroll;
 }
 
 #inputFeedback{
