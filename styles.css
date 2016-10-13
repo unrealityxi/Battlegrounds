@@ -1,0 +1,105 @@
+
+body {
+	background-image: url("https://www.colourbox.com/preview/2259793-fire-and-flame-frame-on-black-background.jpg");
+	background-position: fixed;
+	background-size: cover;
+	color: white;
+}
+#armyList{
+
+}
+
+#heading {
+	padding: 1em;
+}
+
+#armyListWrapper{
+	border: 3px solid #bbb;
+	background-color: white;
+	box-shadow: 5px inset;
+	box-shadow: inset 0 0 5px #666;
+	height: 610px;
+	overflow: scroll;
+	text-align: left;
+	padding-left: 2em;
+
+}
+#armyListWrapper > h3{
+	color: blue;
+}
+#beginBattle {
+
+}
+#inputFeedback {
+padding: 2em;
+font-weight: bold;
+}
+#output {
+	border: 3px solid #bbb;
+	background-color: white;
+	text-align: left;
+	height: 270px;
+	padding: 2em;
+	color: darkgreen;
+	box-shadow: inset 0 0 3px #666;
+	overflow: scroll;
+}
+
+#inputFeedback{
+	color: blue;
+	text-shadow: 0px 0px 15px #fff, 
+				5px 0px 15px #fff, 
+				5px 5px 15px #fff, 
+				0px 5px 15px #fff,
+				0px 0px 15px #fff, 
+				-5px 0px 15px #fff, 
+				-5px -5px 15px #fff, 
+				0px -9px 15px #fff,
+				0px 0px 15px #fff, 
+				9px 0px 15px #fff, 
+				9px 9px 15px #fff, 
+				0px 9px 15px #fff,
+				0px 0px 15px #fff, 
+				-9px 0px 15px #fff, 
+				-9px -9px 15px #fff, 
+				0px -9px 15px #fff
+	
+}
+
+.inactiveArmy{
+	color: #999;
+}
+.activeArmy{
+	color: green;
+}
+.victory{
+	font-size: 2em;
+	background-color: blue;
+	color: red;
+	font-variant: small-caps;
+}
+.firstAttack{
+	color: orange;
+	font-size: 2em;
+	font-variant: small-caps;
+}
+.attack{
+	color: red;
+}
+.defense{
+	color: green;
+}
+.battleStarts {
+	font-weight: bold;
+	font-size: 2em;
+	background-color: orange;
+	text-align: center;
+	text-transform: uppercase;
+}
+.aggressor {
+	color: orange;
+	font-weight: bold;
+}
+.defender {
+	color: blue;
+}
