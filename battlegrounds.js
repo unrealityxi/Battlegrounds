@@ -10,6 +10,7 @@ var unitMin = 5;
 // army related
 var armies =[];
 var activeArmies = [];
+var armyNames = [];
 var minArmies = 2;
 
 // unit related
@@ -51,19 +52,37 @@ function makeArmy(){
 				$("#vehicleCount").val(),
 				$("#operators").val()
 			   ];
-
 	// Clean up data
 	for (let i = 0; i < data.length; i++){
 		data[i] = cleanInput(data[i]);
 	};
 
-	// get total number of units
-	var totalUnits = parseInt(data[3]) + parseInt(data[4]);
-	if ( totalUnits > unitMax || totalUnits < unitMin){
+	var armyName = data[0];
+	var strategy = data[1];
+	var squadCount = parseInt(data[2]);
+	var soldierCount = parseInt(data[3]);
+	var vehicleCount = parseInt(data[4]);
+	var operators = parseInt(data[5]);
+
+	var totalUnits = soldierCount + vehicleCount;
+
+	// check if army has unique name
+	if (armyNames.indexOf(armyName) == -1){
+		armyNames.push(armyName);
+	}
+	else {
 		$("#inputFeedback").css("color", "red");
-		console.log("Error: unit number higher or lover then limit", totalUnits);
+		console.log("Error: army must have unique name");
 		return;
 	}
+
+	// get total number of units
+	if (totalUnits > unitMax || totalUnits < unitMin){
+		$("#inputFeedback").css("color", "red");
+		console.log(`Error: unit count must be between ${unitMin} and ${unitMax}`);
+		return;
+	}
+
 
 	// Create army based on config
 	var config = new ArmyConfig(data);
