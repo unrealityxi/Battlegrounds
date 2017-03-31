@@ -80,6 +80,7 @@ function makeArmy(){
 	if (totalUnits > unitMax || totalUnits < unitMin){
 		$("#inputFeedback").css("color", "red");
 		console.log(`Error: unit count must be between ${unitMin} and ${unitMax}`);
+		armyNames.pop();
 		return;
 	}
 
